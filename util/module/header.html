@@ -1,0 +1,42 @@
+<style>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 8px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+<div id="header">
+    <span class="icon dropdown" id="icon">
+        <img src="/util/image/icon.png" alt="icon">
+        <div class="link dropdown-content" id="home_link">
+            <a href="/">
+                Link_Home
+            </a>
+        </div>
+    </span>
+
+    <span class="link" id="server_link">
+        <a href="/server">
+            Server
+        </a>
+    </span>
+    <span class="link" id="games_link">
+        <a href="/games">
+            Games
+        </a>
+    </span>
+</div>
